@@ -67,16 +67,16 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                 &kp T                                                                 &kp Y          &kp U  &lt 5 I   &kp O      &kp ESCAPE
-&kp A             &kp S         &kp D         &kp F                 &kp G        &kp LS(LG(S))                             &kp MINUS      &kp H          &kp J  &kp K     &kp L      &kp P
-&kp Z             &kp X         &kp C         &kp V                 &kp B        &kp COLON                                 &kp SEMICOLON  &kp N          &kp M  &mkp MB1  &mkp RCLK  &kp ENTER
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 TAB  &lt 2 SPACE  &lt_to_layer_0 3 LANG_ZENKAKUHANKAKU      &kp LANG6      &kp BACKSPACE                              &kp RIGHT_SHIFT
+&kp Q             &kp W         &kp E         &kp R                 &kp T                                                             &kp Y          &kp U  &lt 5 I   &kp O      &kp ESCAPE
+&kp A             &kp S         &kp D         &kp F                 &kp G        &kp LS(LG(LEFT_PARENTHESIS))      &kp LEFT_BRACKET   &kp H          &kp J  &kp K     &kp L      &kp P
+&kp Z             &kp X         &kp C         &kp V                 &kp B        &lt 5 RIGHT_PARENTHESIS           &kp RIGHT_BRACKET  &kp N          &kp M  &mkp MB1  &mkp RCLK  &kp ENTER
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 TAB  &lt 2 SPACE  &lt 3 LANG_ZENKAKUHANKAKU         &kp LANG6          &kp BACKSPACE                              &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>, <&inc_dec_kp 0 0>;
         };
 
-        FUNCTION {
+        SYMBOL {
             bindings = <
 &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                          &kp N8     &kp N9      &kp F3     &kp F4            &kp F5
 &kp TAB           &kp N0        &trans        &kp NUMBER_6  &kp N7  &mkp MB4      &mkp MB5  &trans     &trans      &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET
@@ -94,7 +94,7 @@
             >;
         };
 
-        ARROW {
+        FUNCTION {
             bindings = <
 &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -130,6 +130,17 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
+        };
+
+        layer_7 {
+            bindings = <
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
     };
 };
