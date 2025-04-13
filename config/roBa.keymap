@@ -85,10 +85,10 @@
 
         ARROW_MOUSE {
             bindings = <
-&kp HOME        &kp UP          &kp END          &trans        &trans                        &trans    &trans    &trans    &trans    &kp DEL
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans        &trans  &trans      &mkp MB4  &trans    &trans    &trans    &trans    &trans
-&trans          &trans          &trans           &trans        &trans  &trans      &mkp MB5  &trans    &mkp MB1  &mkp MB3  &mkp MB2  &kp ENTER
-&kp LEFT_SHIFT  &kp LCTRL       &kp LEFT_WIN     &kp LEFT_ALT  &trans  &trans      &mkp MB4  &mkp MB5                                &kp RIGHT_SHIFT
+&kp HOME        &kp UP          &kp END          &trans        &trans                             &trans         &trans    &trans    &trans    &kp DEL
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans        &trans  &trans      &mkp MB4       &trans         &trans    &trans    &trans    &trans
+&trans          &trans          &trans           &trans        &trans  &trans      &mkp MB5       &trans         &mkp MB1  &mkp MB3  &mkp MB2  &kp RSHIFT
+&kp LEFT_SHIFT  &kp LCTRL       &kp LEFT_WIN     &kp LEFT_ALT  &trans  &trans      &kp RIGHT_ALT  &kp RIGHT_WIN                                &kp RCTRL
             >;
         };
 
